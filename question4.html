@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>App</title>
+  </head>
+<body>
+  <header>
+    <ul class="topnav">
+
+      <li class="menubtn"><a href="kategorier.html">Menu</a></li>
+    </ul>
+  </header>
+
+<section class="undernav">
+  <div class="topinfo">
+    <div class="infokat">Kat. 1</div>
+    <button class="infotip" onclick="playAudio()" type="button">Tip</button>
+  <audio id="myAudio">
+    <source src="audio/penge.mp3" type="audio/mpeg">
+  </audio>
+  </div>
+
+  <img class="picture4" src="img/money.jpg" alt="House">
+
+<form id="quiz" name="quiz">
+
+  <h4>Hvad viser billedet?</h4><!--mc står for multiple choice-->
+  <input class="quest3" type="radio" id="mc" name="question1" value="Guld"> Guld
+  <input class="quest3" type="radio" id="mc" name="question2" value="Diamant"> Diamant
+  <input class="quest3" type="radio" id="mc" name="question3" value="Sølv"> Sølv
+  <input class="quest3" type="radio" id="mc" name="question4" value="Penge"> Penge
+
+  <a href="question5.html"><input class="nextbtn" id="btn" type="button" value="Næste"></a>
+</form>
+
+
+</section>
+
+<script>
+var x = document.getElementById("myAudio");
+
+function playAudio() {
+    x.play();
+}
+</script>
+
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>
